@@ -1,2 +1,0 @@
-# YourWeeklyMeal
-MealDB API usage
