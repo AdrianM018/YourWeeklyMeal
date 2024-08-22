@@ -1,0 +1,39 @@
+:root{
+    --light-shades: #F2F0E4;
+    --light-accent: #EB9D57;
+    --main-brand-color: #9F786E;
+    --dark: #141413;
+    --dark-shades: #383545;
+}
+
+.light-shades{
+    color: var( --light-shades);
+}
+.light-accent{
+    color: var( --light-accent);
+}
+.main-brand-color{
+    color: var( --main-brand-color);
+}
+.light-shades{
+    color: var( --dark);
+}
+.dark-shades{
+    color: var( --dark-shades);
+}
+
+.bck-light-shades{
+    background-color: var( --light-shades);
+}
+.bck-light-accent{
+    background-color: var( --light-accent);
+}
+.bck-main-brand-color{
+    background-color: var( --main-brand-color);
+}
+.bck-light-shades{
+    background-color: var( --dark);
+}
+.bck-dark-shades{
+    background-color: var( --dark-shades);
+}
