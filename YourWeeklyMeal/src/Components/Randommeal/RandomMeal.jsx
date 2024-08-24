@@ -26,12 +26,10 @@ export default function RandomMeal() {
                         <h1 className="display-4 fw-bold lh-1 text-body-emphasis">
                             {randomMeal ? randomMeal.meals[0].strMeal : 'Loading...'}
                         </h1>
-                        <p className="lead">
+                        <p className="lead"  style={{height: '150px', overflow: 'scroll', overflowX: 'hidden'}}>
                             {randomMeal ? randomMeal.meals[0].strInstructions : 'Fetching meal instructions...'}
                         </p>
-                        <div className="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                            <button type="button" className="btn btn-primary btn-lg px-4 me-md-2 fw-bold">See recipe</button>
-                        </div>
+
                     </div>
                     <div className="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
                         <img 
@@ -41,6 +39,9 @@ export default function RandomMeal() {
                             width="720" 
                         />
                     </div>
+                    <div className="d-grid gap-2 d-md-flex justify-content-center mt-4 mb-4 mb-lg-3">
+                            <button type="button" className="btn btn-primary btn-lg px-4 me-md-2 fw-bold">See recipe</button>
+                        </div>
                 </div>
             </div>
         </>

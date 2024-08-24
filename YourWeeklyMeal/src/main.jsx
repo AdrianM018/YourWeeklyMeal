@@ -6,7 +6,7 @@ import App from './app'
 import MealCategories from './Components/MealCategories/MealCategories.jsx'
 import SingleMealCategories from "./Components/MealCategories/SingleMealCategory.jsx"
 import Searchresult from "./Components/SearchBar/Searchresult.jsx"
-import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
