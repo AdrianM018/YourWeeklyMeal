@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import Searchbar from '../SearchBar/Searchbar';
 
 export const UserContext = createContext();
+export let selectedCategory;
 
-function MealCategories({ children }) {
+function MealCategories() {
   const [mealCategories, setMealCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('Beef');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,13 +42,14 @@ function MealCategories({ children }) {
                     <h6 className="mb-3">{category.strCategory}</h6>
                     <p>{category.strCategoryDescription}</p>
                     <div className="d-flex mb-3">
-                      <Link to={'/YourWeeklyMeal/Pages/SingleMealCategory.html'}>
+                      <Link to={`/YourWeeklyMeal/Pages/SingleMealCategory.html/${selectedCategory}`}>
                         <button
                           className="btn btn-primary mx-auto"
-                          onClick={() => {
-                            setSelectedCategory(category.strCategory)
+                          onClick={() =>{
+                            selectedCategory = category.strCategory
                             console.log(selectedCategory)
-                          }}>
+                          }
+                          }>
                           Explore {category.strCategory}
                         </button>
                       </Link>
@@ -60,9 +61,6 @@ function MealCategories({ children }) {
           ))}
         </div>
       </div>
-      <UserContext.Provider value={selectedCategory}>
-        {children}
-      </UserContext.Provider>
     </>
   );
 }

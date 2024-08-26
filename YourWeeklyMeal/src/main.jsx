@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <MealCategories />
   },
   {
-    path: 'YourWeeklyMeal/Pages/SingleMealCategory.html',
+    path: `YourWeeklyMeal/Pages/SingleMealCategory.html/:selectedCategory`,
     element: <SingleMealCategories/>
   },
   {
