@@ -2,7 +2,7 @@ import React, { useEffect, useState, createContext } from 'react';
 import { Link } from 'react-router-dom';
 import Searchbar from '../SearchBar/Searchbar';
 
-export const UserContext = createContext();
+
 export let selectedCategory;
 
 function MealCategories() {
@@ -28,6 +28,7 @@ function MealCategories() {
 
   return (
     <>
+
       <Searchbar />
       <div className="container-fluid mt-3 mx-1">
         <div className="row justify-content-center">

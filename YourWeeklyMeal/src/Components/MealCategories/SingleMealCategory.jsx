@@ -1,8 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Searchbar from '../SearchBar/Searchbar';
 import { selectedCategory } from './MealCategories';
 
+
 function SingleMealCategories() {
+
+
   return (
     <>
       <Searchbar />

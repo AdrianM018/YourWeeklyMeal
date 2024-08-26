@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min"
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './app'
+import App from "./App.jsx"
 import MealCategories from './Components/MealCategories/MealCategories.jsx'
 import SingleMealCategories from "./Components/MealCategories/SingleMealCategory.jsx"
 import Searchresult from "./Components/SearchBar/Searchresult.jsx"
